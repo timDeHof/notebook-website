@@ -1,0 +1,32 @@
+type Testimonial @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  avatar: String
+  testimony: String
+}
+
+type Notebook @model @auth(rules: [{allow: public}, {allow: owner}]) {
+  id: ID!
+  name: String!
+  Subject: Subject @hasOne
+  Pages: [Page] @hasMany(indexName: "byNotebook", fields: ["id"])
+  pageCount: Int
+  description: String
+}
+
+type Subject @model @auth(rules: [{allow: public}, {allow: owner}]) {
+  id: ID!
+  name: String!
+  Pages: [Page] @hasMany(indexName: "bySubject", fields: ["id"])
+}
+
+type Page @model @auth(rules: [{allow: public}, {allow: owner}]) {
+  id: ID!
+  title: String!
+  content: String!
+  subjectID: ID! @index(name: "bySubject")
+  Subject: Subject @belongsTo(fields: ["subjectID"])
+  notebookID: ID! @index(name: "byNotebook")
+  Notebook: Notebook @belongsTo(fields: ["notebookID"])
+}
+ 
