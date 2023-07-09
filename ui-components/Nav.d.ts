@@ -26,8 +26,8 @@ export declare type NavOverridesProps = {
 export declare type NavProps = React.PropsWithChildren<Partial<FlexProps> & {
     username?: String;
     authText?: String;
-    avatar?: String;
     handleAuth?: (event: SyntheticEvent) => void;
+    avatar?: String;
 } & {
     overrides?: NavOverridesProps | undefined | null;
 }>;

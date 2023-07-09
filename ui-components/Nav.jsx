@@ -10,7 +10,7 @@ import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import Logo from "./Logo";
 import { Button, Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 export default function Nav(props) {
-  const { username, authText, avatar, handleAuth, overrides, ...rest } = props;
+  const { username, authText, handleAuth, avatar, overrides, ...rest } = props;
   return (
     <Flex
       gap="352px"
@@ -145,7 +145,7 @@ export default function Nav(props) {
                   right="29.17%"
                   padding="0px 0px 0px 0px"
                   whiteSpace="pre-wrap"
-                  children={username}
+                  children={avatar}
                   {...getOverrideProps(overrides, "C")}
                 ></Text>
               </View>

@@ -89,28 +89,28 @@ export default function Testimony(props) {
               )}
             ></Text>
           </Flex>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="800"
-            color="rgba(239,240,240,1)"
-            lineHeight="20px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children={testimonyModel?.name}
-            {...getOverrideProps(overrides, "Author")}
-          ></Text>
         </Flex>
+        <Text
+          fontFamily="Inter"
+          fontSize="16px"
+          fontWeight="800"
+          color="rgba(239,240,240,1)"
+          lineHeight="20px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="unset"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children={`${"- "}${testimonyModel?.name}`}
+          {...getOverrideProps(overrides, "Author")}
+        ></Text>
       </Flex>
       <Image
         width="96px"
