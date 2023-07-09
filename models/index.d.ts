@@ -49,6 +49,7 @@ type EagerNotebook = {
   readonly Pages?: (Page | null)[] | null;
   readonly pageCount?: number | null;
   readonly description?: string | null;
+  readonly cover?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   readonly notebookSubjectId?: string | null;
@@ -65,6 +66,7 @@ type LazyNotebook = {
   readonly Pages: AsyncCollection<Page>;
   readonly pageCount?: number | null;
   readonly description?: string | null;
+  readonly cover?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   readonly notebookSubjectId?: string | null;

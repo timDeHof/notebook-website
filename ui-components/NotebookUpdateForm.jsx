@@ -202,6 +202,7 @@ export default function NotebookUpdateForm(props) {
     Pages: [],
     pageCount: "",
     description: "",
+    cover: "",
   };
   const [name, setName] = React.useState(initialValues.name);
   const [Subject, setSubject] = React.useState(initialValues.Subject);
@@ -210,6 +211,7 @@ export default function NotebookUpdateForm(props) {
   const [description, setDescription] = React.useState(
     initialValues.description
   );
+  const [cover, setCover] = React.useState(initialValues.cover);
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     const cleanValues = notebookRecord
@@ -224,6 +226,7 @@ export default function NotebookUpdateForm(props) {
     setCurrentPagesDisplayValue("");
     setPageCount(cleanValues.pageCount);
     setDescription(cleanValues.description);
+    setCover(cleanValues.cover);
     setErrors({});
   };
   const [notebookRecord, setNotebookRecord] = React.useState(notebookModelProp);
@@ -284,6 +287,7 @@ export default function NotebookUpdateForm(props) {
     Pages: [],
     pageCount: [],
     description: [],
+    cover: [],
   };
   const runValidationTasks = async (
     fieldName,
@@ -316,6 +320,7 @@ export default function NotebookUpdateForm(props) {
           Pages,
           pageCount,
           description,
+          cover,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -398,6 +403,7 @@ export default function NotebookUpdateForm(props) {
             Subject: modelFields.Subject,
             pageCount: modelFields.pageCount,
             description: modelFields.description,
+            cover: modelFields.cover,
           };
           promises.push(
             DataStore.save(
@@ -436,6 +442,7 @@ export default function NotebookUpdateForm(props) {
               Pages,
               pageCount,
               description,
+              cover,
             };
             const result = onChange(modelFields);
             value = result?.name ?? value;
@@ -461,6 +468,7 @@ export default function NotebookUpdateForm(props) {
               Pages,
               pageCount,
               description,
+              cover,
             };
             const result = onChange(modelFields);
             value = result?.Subject ?? value;
@@ -539,6 +547,7 @@ export default function NotebookUpdateForm(props) {
               Pages: values,
               pageCount,
               description,
+              cover,
             };
             const result = onChange(modelFields);
             values = result?.Pages ?? values;
@@ -622,6 +631,7 @@ export default function NotebookUpdateForm(props) {
               Pages,
               pageCount: value,
               description,
+              cover,
             };
             const result = onChange(modelFields);
             value = result?.pageCount ?? value;
@@ -650,6 +660,7 @@ export default function NotebookUpdateForm(props) {
               Pages,
               pageCount,
               description: value,
+              cover,
             };
             const result = onChange(modelFields);
             value = result?.description ?? value;
@@ -663,6 +674,35 @@ export default function NotebookUpdateForm(props) {
         errorMessage={errors.description?.errorMessage}
         hasError={errors.description?.hasError}
         {...getOverrideProps(overrides, "description")}
+      ></TextField>
+      <TextField
+        label="Cover"
+        isRequired={false}
+        isReadOnly={false}
+        value={cover}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              name,
+              Subject,
+              Pages,
+              pageCount,
+              description,
+              cover: value,
+            };
+            const result = onChange(modelFields);
+            value = result?.cover ?? value;
+          }
+          if (errors.cover?.hasError) {
+            runValidationTasks("cover", value);
+          }
+          setCover(value);
+        }}
+        onBlur={() => runValidationTasks("cover", cover)}
+        errorMessage={errors.cover?.errorMessage}
+        hasError={errors.cover?.hasError}
+        {...getOverrideProps(overrides, "cover")}
       ></TextField>
       <Flex
         justifyContent="space-between"

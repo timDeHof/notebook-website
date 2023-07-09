@@ -7,6 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { Testimonial } from "../models";
+import { SortDirection } from "@aws-amplify/datastore";
 import {
   getOverrideProps,
   useDataStoreBinding,
@@ -15,10 +16,12 @@ import Testimony from "./Testimony";
 import { Collection } from "@aws-amplify/ui-react";
 export default function TestimonyCollection(props) {
   const { items: itemsProp, overrideItems, overrides, ...rest } = props;
+  const itemsPagination = { sort: (s) => s.createdAt(SortDirection.ASCENDING) };
   const [items, setItems] = React.useState(undefined);
   const itemsDataStore = useDataStoreBinding({
     type: "collection",
     model: Testimonial,
+    pagination: itemsPagination,
   }).items;
   React.useEffect(() => {
     if (itemsProp !== undefined) {
@@ -29,9 +32,12 @@ export default function TestimonyCollection(props) {
   }, [itemsProp, itemsDataStore]);
   return (
     <Collection
-      type="list"
-      direction="column"
-      justifyContent="left"
+      type="grid"
+      searchPlaceholder="Search..."
+      templateColumns="1fr 1fr 1fr"
+      autoFlow="row"
+      alignItems="stretch"
+      justifyContent="stretch"
       items={items || []}
       {...getOverrideProps(overrides, "TestimonyCollection")}
       {...rest}

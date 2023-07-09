@@ -19,6 +19,7 @@ export declare type NotebookUpdateFormInputValues = {
     Pages?: Page[];
     pageCount?: number;
     description?: string;
+    cover?: string;
 };
 export declare type NotebookUpdateFormValidationValues = {
     name?: ValidationFunction<string>;
@@ -26,6 +27,7 @@ export declare type NotebookUpdateFormValidationValues = {
     Pages?: ValidationFunction<Page>;
     pageCount?: ValidationFunction<number>;
     description?: ValidationFunction<string>;
+    cover?: ValidationFunction<string>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type NotebookUpdateFormOverridesProps = {
@@ -35,6 +37,7 @@ export declare type NotebookUpdateFormOverridesProps = {
     Pages?: PrimitiveOverrideProps<AutocompleteProps>;
     pageCount?: PrimitiveOverrideProps<TextFieldProps>;
     description?: PrimitiveOverrideProps<TextFieldProps>;
+    cover?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
 export declare type NotebookUpdateFormProps = React.PropsWithChildren<{
     overrides?: NotebookUpdateFormOverridesProps | undefined | null;

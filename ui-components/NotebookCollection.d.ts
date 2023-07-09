@@ -6,19 +6,19 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { StoryProps } from "./Story";
+import { NotebookProps } from "./Notebook";
 import { CollectionProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type NotebookCollectionOverridesProps = {
     NotebookCollection?: PrimitiveOverrideProps<CollectionProps>;
-    Story?: StoryProps;
+    Notebook?: NotebookProps;
 } & EscapeHatchProps;
 export declare type NotebookCollectionProps = React.PropsWithChildren<Partial<CollectionProps<any>> & {
     items?: any[];
     overrideItems?: (collectionItem: {
         item: any;
         index: number;
-    }) => StoryProps;
+    }) => NotebookProps;
 } & {
     overrides?: NotebookCollectionOverridesProps | undefined | null;
 }>;

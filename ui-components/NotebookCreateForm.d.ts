@@ -19,6 +19,7 @@ export declare type NotebookCreateFormInputValues = {
     Pages?: Page[];
     pageCount?: number;
     description?: string;
+    cover?: string;
 };
 export declare type NotebookCreateFormValidationValues = {
     name?: ValidationFunction<string>;
@@ -26,6 +27,7 @@ export declare type NotebookCreateFormValidationValues = {
     Pages?: ValidationFunction<Page>;
     pageCount?: ValidationFunction<number>;
     description?: ValidationFunction<string>;
+    cover?: ValidationFunction<string>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type NotebookCreateFormOverridesProps = {
@@ -35,6 +37,7 @@ export declare type NotebookCreateFormOverridesProps = {
     Pages?: PrimitiveOverrideProps<AutocompleteProps>;
     pageCount?: PrimitiveOverrideProps<TextFieldProps>;
     description?: PrimitiveOverrideProps<TextFieldProps>;
+    cover?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
 export declare type NotebookCreateFormProps = React.PropsWithChildren<{
     overrides?: NotebookCreateFormOverridesProps | undefined | null;
