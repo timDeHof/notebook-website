@@ -1,3 +1,11 @@
+type Pricing @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  plan: String!
+  price: String!
+  details: [String!]
+  catchPhase: String
+}
+
 type Testimonial @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String
