@@ -1,6 +1,6 @@
 import { Amplify } from "aws-amplify"
 import { studioTheme } from "../../ui-components"
-import { AmplifyProvider } from "@aws-amplify/ui-react"
+import { ThemeProvider } from "@aws-amplify/ui-react"
 import type { AppProps } from "next/app"
 import "@aws-amplify/ui-react/styles.css"
 import "@fontsource/inter"
@@ -12,9 +12,9 @@ Amplify.configure(awsconfig)
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <AmplifyProvider theme={studioTheme}>
+    <ThemeProvider theme={studioTheme}>
       <Component {...pageProps} />
-    </AmplifyProvider>
+    </ThemeProvider>
   )
 }
 

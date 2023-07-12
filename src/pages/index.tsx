@@ -1,16 +1,16 @@
 import React from "react"
-import { Flex, View, Heading } from "@aws-amplify/ui-react"
+import { Flex, View, Image } from "@aws-amplify/ui-react"
 import {
+  Features2X2,
+  MarketingPricing,
   Footer,
   Hero,
   Persuade,
-  TestimonyCollection,
 } from "../../ui-components"
 import Layout from "../components/Layout"
 import { useRouter } from "next/router"
-import Image from "next/image"
-import HeroSVG from "../../public/HeroIllustration.svg"
-export default function index() {
+
+export default function Index() {
   const router = useRouter()
   return (
     <Layout
@@ -21,17 +21,21 @@ export default function index() {
       userName='none'>
       <Flex
         direction='row'
-        justifyContent='flex-start'
-        alignItems='stretch'
+        justifyContent='center'
+        alignItems='space-between'
         alignContent='flex-start'
         wrap='nowrap'
         gap='1rem'>
         <Hero handleClick={() => {}} />
         <Image
-          src={HeroSVG}
+          src='/HeroIllustration.svg'
           alt={"hero Illustration"}
-          width={633}
-          height={554}
+          objectFit='contain'
+          objectPosition='50% 50%'
+          backgroundColor='initial'
+          height='25%'
+          width='25%'
+          opacity='100%'
         />
       </Flex>
       <Flex
@@ -40,16 +44,20 @@ export default function index() {
         alignItems={"center"}
         justifyContent='center'
         gap={"1rem"}>
-        <Heading level={3} marginBottom={"3rem"}>
-          Don’t take our word for it. Read what people are saying
-        </Heading>
-        <TestimonyCollection />
+        <MarketingPricing />
+      </Flex>
+      <Flex
+        margin={"0rem"}
+        direction='column'
+        alignItems={"center"}
+        justifyContent='center'>
+        <Features2X2 />
       </Flex>
       <Flex justifyContent={"center"}>
-        <Persuade banner='https://i.imgur.com/MxbD3N4.png' />
+        <Persuade banner='https://i.imgur.com/Wt1MyRp.png' />
       </Flex>
       <View marginTop='50px'>
-        <Footer />
+        <Footer width='100%' />
       </View>
     </Layout>
   )
