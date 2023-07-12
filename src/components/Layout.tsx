@@ -14,8 +14,9 @@ export default function Layout({
   userName,
 }: LayoutProps) {
   return (
-    <View width='60vw' marginLeft='auto' marginRight='auto'>
+    <View width='80vw' marginLeft='auto' marginRight='auto'>
       <Nav
+        width='100%'
         marginTop={"20px"}
         handleAuth={handleClick}
         authText={authText}
