@@ -6,6 +6,40 @@ import { LazyLoading, LazyLoadingDisabled, AsyncItem, AsyncCollection } from "@a
 
 
 
+type EagerPricing = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Pricing, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly plan: string;
+  readonly price: string;
+  readonly details?: string[] | null;
+  readonly catchPhase?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+type LazyPricing = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Pricing, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly plan: string;
+  readonly price: string;
+  readonly details?: string[] | null;
+  readonly catchPhase?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+export declare type Pricing = LazyLoading extends LazyLoadingDisabled ? EagerPricing : LazyPricing
+
+export declare const Pricing: (new (init: ModelInit<Pricing>) => Pricing) & {
+  copyOf(source: Pricing, mutator: (draft: MutableModel<Pricing>) => MutableModel<Pricing> | void): Pricing;
+}
+
 type EagerTestimonial = {
   readonly [__modelMeta__]: {
     identifier: ManagedIdentifier<Testimonial, 'id'>;
@@ -49,6 +83,7 @@ type EagerNotebook = {
   readonly Pages?: (Page | null)[] | null;
   readonly pageCount?: number | null;
   readonly description?: string | null;
+  readonly cover?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   readonly notebookSubjectId?: string | null;
@@ -65,6 +100,7 @@ type LazyNotebook = {
   readonly Pages: AsyncCollection<Page>;
   readonly pageCount?: number | null;
   readonly description?: string | null;
+  readonly cover?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   readonly notebookSubjectId?: string | null;

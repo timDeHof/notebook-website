@@ -6,32 +6,76 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Text, View } from "@aws-amplify/ui-react";
-import Logo from "./Logo";
+import {
+  getOverrideProps,
+  getOverridesFromVariants,
+  mergeVariantsAndOverrides,
+} from "@aws-amplify/ui-react/internal";
+import Logo3 from "./Logo3";
+import { Flex, Text } from "@aws-amplify/ui-react";
 export default function Footer(props) {
-  const { overrides, ...rest } = props;
+  const { overrides: overridesProp, ...rest } = props;
+  const variants = [
+    {
+      variantValues: { breakpoint: "Desktop" },
+      overrides: {
+        "Logo 3": {},
+        "\u00A9 Copyright , Algomentor 2022": {},
+        Footer: {},
+      },
+    },
+    {
+      variantValues: { breakpoint: "Mobile" },
+      overrides: {
+        "Logo 3": { small: "true", width: "46px" },
+        "\u00A9 Copyright , Algomentor 2022": { shrink: "0" },
+        Footer: {
+          direction: "column",
+          width: "375px",
+          height: "177px",
+          justifyContent: "center",
+        },
+      },
+    },
+  ];
+  const overrides = mergeVariantsAndOverrides(
+    getOverridesFromVariants(variants, props),
+    overridesProp || {}
+  );
   return (
-    <View
-      width="1170px"
-      height="32px"
-      display="block"
-      gap="unset"
-      alignItems="unset"
-      justifyContent="unset"
+    <Flex
+      gap="10px"
+      direction="row"
+      width="1440px"
+      height="unset"
+      justifyContent="flex-start"
+      alignItems="center"
       position="relative"
-      padding="0px 0px 0px 0px"
+      padding="8px 24px 8px 24px"
       backgroundColor="rgba(9,27,42,1)"
+      display="flex"
       {...getOverrideProps(overrides, "Footer")}
       {...rest}
     >
+      <Logo3
+        height="32px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        shrink="0"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        small={false}
+        {...getOverrideProps(overrides, "Logo 3")}
+      ></Logo3>
       <Text
         fontFamily="Inter"
         fontSize="16px"
         fontWeight="400"
         color="rgba(239,240,240,1)"
         lineHeight="24px"
-        textAlign="left"
+        textAlign="right"
         display="block"
         direction="column"
         justifyContent="unset"
@@ -40,32 +84,15 @@ export default function Footer(props) {
         height="unset"
         gap="unset"
         alignItems="unset"
-        position="absolute"
-        top="3.13%"
-        bottom="21.88%"
-        left="79.4%"
-        right="-0.17%"
+        grow="1"
+        shrink="1"
+        basis="0"
+        position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="© Copyright , Algomentor 2022"
         {...getOverrideProps(overrides, "\u00A9 Copyright , Algomentor 2022")}
       ></Text>
-      <Logo
-        width="171px"
-        height="32px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        overflow="hidden"
-        position="absolute"
-        top="0%"
-        bottom="0%"
-        left="0%"
-        right="85.38%"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Logo")}
-      ></Logo>
-    </View>
+    </Flex>
   );
 }

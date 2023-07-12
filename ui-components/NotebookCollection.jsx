@@ -6,19 +6,19 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { Notebook } from "../models";
+import { Notebook as Notebook0 } from "../models";
 import {
   getOverrideProps,
   useDataStoreBinding,
 } from "@aws-amplify/ui-react/internal";
-import Story from "./Story";
+import Notebook from "./Notebook";
 import { Collection } from "@aws-amplify/ui-react";
 export default function NotebookCollection(props) {
   const { items: itemsProp, overrideItems, overrides, ...rest } = props;
   const [items, setItems] = React.useState(undefined);
   const itemsDataStore = useDataStoreBinding({
     type: "collection",
-    model: Notebook,
+    model: Notebook0,
   }).items;
   React.useEffect(() => {
     if (itemsProp !== undefined) {
@@ -40,8 +40,9 @@ export default function NotebookCollection(props) {
   return (
     <Collection
       type="grid"
+      isPaginated={true}
       searchPlaceholder="Search..."
-      templateColumns="1fr 1fr"
+      templateColumns="1fr 1fr 1fr"
       autoFlow="row"
       alignItems="stretch"
       justifyContent="stretch"
@@ -50,14 +51,11 @@ export default function NotebookCollection(props) {
       {...rest}
     >
       {(item, index) => (
-        <Story
+        <Notebook
           NoteBookModel={item}
-          height="auto"
-          width="auto"
-          margin="10px 10px 10px 10px"
           key={item.id}
           {...(overrideItems && overrideItems({ item, index }))}
-        ></Story>
+        ></Notebook>
       )}
     </Collection>
   );

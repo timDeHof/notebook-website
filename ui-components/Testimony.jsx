@@ -24,7 +24,7 @@ export default function Testimony(props) {
       {...rest}
     >
       <Flex
-        gap="10px"
+        gap="20px"
         direction="column"
         width="unset"
         height="unset"
@@ -34,7 +34,7 @@ export default function Testimony(props) {
         top="45px"
         left="0px"
         borderRadius="12px"
-        padding="56px 32px 33px 32px"
+        padding="56px 32px 32px 32px"
         backgroundColor="rgba(17,35,49,1)"
         {...getOverrideProps(overrides, "ContentGroup")}
       >
@@ -51,16 +51,17 @@ export default function Testimony(props) {
           {...getOverrideProps(overrides, "Content")}
         >
           <Flex
-            padding="0px 0px 0px 0px"
-            width="314px"
-            height="96px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
+            gap="10px"
+            direction="row"
+            width="unset"
+            height="unset"
+            justifyContent="flex-start"
+            alignItems="flex-start"
             shrink="0"
+            alignSelf="stretch"
             position="relative"
-            {...getOverrideProps(overrides, "Testimony31493208")}
+            padding="0px 0px 0px 0px"
+            {...getOverrideProps(overrides, "Testimony39476166")}
           >
             <Text
               fontFamily="Inter"
@@ -76,16 +77,14 @@ export default function Testimony(props) {
               height="unset"
               gap="unset"
               alignItems="unset"
-              position="absolute"
-              top="calc(50% - 48px - 0px)"
-              left="0%"
-              right="0%"
+              shrink="0"
+              position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children={testimonyModel?.testimony}
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, sed potenti et rhoncus ut. Odio diam sit rhoncus mauris. Nunc eros, turpis eleifend justo vulputate ipsum."
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, sed potenti et rhoncus ut. Odio diam sit rhoncus mauris. Nunc eros, turpis eleifend justo vulputate ipsum. dfgdfgdfgdffdhfghfgddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
               )}
             ></Text>
           </Flex>

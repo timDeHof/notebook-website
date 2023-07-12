@@ -38,6 +38,7 @@ export default function Notebook(props) {
         padding="0px 0px 0px 0px"
         opacity="0.699999988079071"
         objectFit="cover"
+        src={NoteBookModel?.cover}
         {...getOverrideProps(overrides, "Banner")}
       ></Image>
       <Text

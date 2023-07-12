@@ -7,15 +7,23 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import Logo from "./Logo";
+import Logo3 from "./Logo3";
 import { Button, Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 export default function Nav(props) {
-  const { username, authText, avatar, handleAuth, overrides, ...rest } = props;
+  const {
+    username,
+    authText,
+    handleAuth,
+    avatar,
+    Small = false,
+    overrides,
+    ...rest
+  } = props;
   return (
     <Flex
       gap="352px"
       direction="row"
-      width="1163px"
+      width="1440px"
       height="unset"
       justifyContent="space-between"
       alignItems="center"
@@ -25,19 +33,18 @@ export default function Nav(props) {
       {...getOverrideProps(overrides, "Nav")}
       {...rest}
     >
-      <Logo
-        width="171px"
+      <Logo3
         height="32px"
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
-        overflow="hidden"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Logo")}
-      ></Logo>
+        small={false}
+        {...getOverrideProps(overrides, "Logo 3")}
+      ></Logo3>
       <Flex
         gap="14px"
         direction="row"
@@ -63,7 +70,7 @@ export default function Nav(props) {
           padding="11px 19px 11px 19px"
           backgroundColor="rgba(17,35,49,1)"
           display={username == "none" ? "none" : "flex"}
-          {...getOverrideProps(overrides, "User32393520")}
+          {...getOverrideProps(overrides, "User39476179")}
         >
           <Flex
             gap="16px"
@@ -75,7 +82,7 @@ export default function Nav(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "User32393521")}
+            {...getOverrideProps(overrides, "User39476180")}
           >
             <View
               width="24px"
@@ -145,7 +152,7 @@ export default function Nav(props) {
                   right="29.17%"
                   padding="0px 0px 0px 0px"
                   whiteSpace="pre-wrap"
-                  children={username}
+                  children={avatar}
                   {...getOverrideProps(overrides, "C")}
                 ></Text>
               </View>

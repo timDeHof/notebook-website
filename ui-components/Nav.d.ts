@@ -6,16 +6,16 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { LogoProps } from "./Logo";
+import { Logo3Props } from "./Logo3";
 import { ButtonProps, FlexProps, IconProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 import { SyntheticEvent } from "react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type NavOverridesProps = {
     Nav?: PrimitiveOverrideProps<FlexProps>;
-    Logo?: LogoProps;
+    "Logo 3"?: Logo3Props;
     Menu?: PrimitiveOverrideProps<FlexProps>;
-    User32393520?: PrimitiveOverrideProps<FlexProps>;
-    User32393521?: PrimitiveOverrideProps<FlexProps>;
+    User39476179?: PrimitiveOverrideProps<FlexProps>;
+    User39476180?: PrimitiveOverrideProps<FlexProps>;
     Avatar?: PrimitiveOverrideProps<ViewProps>;
     "Group 6027"?: PrimitiveOverrideProps<ViewProps>;
     Base?: PrimitiveOverrideProps<IconProps>;
@@ -26,8 +26,9 @@ export declare type NavOverridesProps = {
 export declare type NavProps = React.PropsWithChildren<Partial<FlexProps> & {
     username?: String;
     authText?: String;
-    avatar?: String;
     handleAuth?: (event: SyntheticEvent) => void;
+    avatar?: String;
+    Small?: Boolean;
 } & {
     overrides?: NavOverridesProps | undefined | null;
 }>;

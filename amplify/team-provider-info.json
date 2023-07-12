@@ -18,6 +18,9 @@
       "function": {
         "pageCountfcn": {},
         "pageCountFunction": {}
+      },
+      "api": {
+        "notebookwebsite": {}
       }
     }
   }

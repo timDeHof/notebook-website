@@ -62,7 +62,6 @@ export default function Persuade(props) {
         borderRadius="4px"
         padding="7px 15px 7px 15px"
         backgroundColor="rgba(226,98,24,1)"
-        onClick={handleClick}
         {...getOverrideProps(overrides, "Button")}
       >
         <Text

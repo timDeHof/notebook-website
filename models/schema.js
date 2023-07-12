@@ -1,5 +1,86 @@
 export const schema = {
     "models": {
+        "Pricing": {
+            "name": "Pricing",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "plan": {
+                    "name": "plan",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "price": {
+                    "name": "price",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "details": {
+                    "name": "details",
+                    "isArray": true,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": [],
+                    "isArrayNullable": true
+                },
+                "catchPhase": {
+                    "name": "catchPhase",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "createdAt": {
+                    "name": "createdAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                },
+                "updatedAt": {
+                    "name": "updatedAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                }
+            },
+            "syncable": true,
+            "pluralName": "Pricings",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "auth",
+                    "properties": {
+                        "rules": [
+                            {
+                                "allow": "public",
+                                "operations": [
+                                    "create",
+                                    "update",
+                                    "delete",
+                                    "read"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
         "Testimonial": {
             "name": "Testimonial",
             "fields": {
@@ -133,6 +214,13 @@ export const schema = {
                 },
                 "description": {
                     "name": "description",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "cover": {
+                    "name": "cover",
                     "isArray": false,
                     "type": "String",
                     "isRequired": false,
@@ -430,5 +518,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.4.4",
-    "version": "7142225a62d0def67414432c01b611f2"
+    "version": "0f08f59050bdb34cdc8dc7a91c09c565"
 };

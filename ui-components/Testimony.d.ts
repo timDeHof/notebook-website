@@ -13,8 +13,8 @@ export declare type TestimonyOverridesProps = {
     Testimony?: PrimitiveOverrideProps<ViewProps>;
     ContentGroup?: PrimitiveOverrideProps<FlexProps>;
     Content?: PrimitiveOverrideProps<FlexProps>;
-    Testimony31493208?: PrimitiveOverrideProps<FlexProps>;
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, sed potenti et rhoncus ut. Odio diam sit rhoncus mauris. Nunc eros, turpis eleifend justo vulputate ipsum."?: PrimitiveOverrideProps<TextProps>;
+    Testimony39476166?: PrimitiveOverrideProps<FlexProps>;
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, sed potenti et rhoncus ut. Odio diam sit rhoncus mauris. Nunc eros, turpis eleifend justo vulputate ipsum. dfgdfgdfgdffdhfghfgddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"?: PrimitiveOverrideProps<TextProps>;
     Author?: PrimitiveOverrideProps<TextProps>;
     image?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
