@@ -6,15 +6,17 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { TextProps, ViewProps } from "@aws-amplify/ui-react";
-import { LogoProps } from "./Logo";
+import { Logo3Props } from "./Logo3";
+import { FlexProps, TextProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type FooterOverridesProps = {
-    Footer?: PrimitiveOverrideProps<ViewProps>;
+    Footer?: PrimitiveOverrideProps<FlexProps>;
+    "Logo 3"?: Logo3Props;
     "\u00A9 Copyright , Algomentor 2022"?: PrimitiveOverrideProps<TextProps>;
-    Logo?: LogoProps;
 } & EscapeHatchProps;
-export declare type FooterProps = React.PropsWithChildren<Partial<ViewProps> & {
+export declare type FooterProps = React.PropsWithChildren<Partial<FlexProps> & {
+    breakpoint?: "Desktop" | "Mobile";
+} & {
     overrides?: FooterOverridesProps | undefined | null;
 }>;
 export default function Footer(props: FooterProps): React.ReactElement;

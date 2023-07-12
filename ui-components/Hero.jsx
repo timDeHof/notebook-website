@@ -42,10 +42,10 @@ export default function Hero(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Join me backstage to gain unlimited access to how I solve technical problems"
+        children="Experience the full power of our app – Upgrade to Pro."
         {...getOverrideProps(
           overrides,
-          "Join me backstage to gain unlimited access to how I solve technical problems"
+          "Experience the full power of our app \u2013 Upgrade to Pro."
         )}
       ></Text>
       <Flex
@@ -67,8 +67,7 @@ export default function Hero(props) {
           size="default"
           isDisabled={false}
           variation="primary"
-          children="Become a Member"
-          onClick={handleClick}
+          children="Become a Pro"
           {...getOverrideProps(overrides, "Button")}
         ></Button>
         <Flex
@@ -123,8 +122,8 @@ export default function Hero(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="For just $99"
-            {...getOverrideProps(overrides, "For just $99")}
+            children="For just $9.99/month"
+            {...getOverrideProps(overrides, "For just $9.99/month")}
           ></Text>
         </Flex>
       </Flex>
