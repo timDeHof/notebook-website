@@ -444,7 +444,6 @@ export default function PlanCard(props) {
       <Button
         width="unset"
         height="unset"
-        padding="7px 0px 7px 0px"
         shrink="0"
         alignSelf="stretch"
         backgroundColor="rgba(0,34,102,1)"
