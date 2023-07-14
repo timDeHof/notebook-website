@@ -27,7 +27,7 @@ export default function Footer(props) {
     {
       variantValues: { breakpoint: "Mobile" },
       overrides: {
-        "Logo 3": { small: "true", width: "46px" },
+        "Logo 3": { breakpoint: "small", width: "46px" },
         "\u00A9 Copyright , Algomentor 2022": { shrink: "0" },
         Footer: {
           direction: "column",
@@ -66,7 +66,7 @@ export default function Footer(props) {
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        small={false}
+        breakpoint="large"
         {...getOverrideProps(overrides, "Logo 3")}
       ></Logo3>
       <Text

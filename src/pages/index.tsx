@@ -15,10 +15,10 @@ export default function Index() {
   return (
     <Layout
       handleClick={() => {
-        router.push("/notebookList")
+        router.push("/dashboard")
       }}
-      authText='Sign Up'
-      userName='none'>
+      authText='Open Dashboard'
+      username='none'>
       <Flex
         direction='row'
         justifyContent='center'
@@ -42,8 +42,7 @@ export default function Index() {
         margin={"0rem"}
         direction='column'
         alignItems={"center"}
-        justifyContent='center'
-        gap={"1rem"}>
+        justifyContent='center'>
         <MarketingPricing />
       </Flex>
       <Flex
