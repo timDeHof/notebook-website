@@ -11,12 +11,12 @@ import {
   getOverridesFromVariants,
   mergeVariantsAndOverrides,
 } from "@aws-amplify/ui-react/internal";
-import { Icon, View } from "@aws-amplify/ui-react";
+import { Icon, View, useBreakpointValue } from "@aws-amplify/ui-react";
 export default function Logo3(props) {
-  const { Small = false, overrides: overridesProp, ...rest } = props;
+  const { Small = false, overrides: overridesProp, ...restProp } = props;
   const variants = [
     {
-      variantValues: { small: "false" },
+      variantValues: { breakpoint: "large" },
       overrides: {
         NimbusNote39833501: { display: "block", top: "10px" },
         NimbusNote39833502: { display: "block", top: "10px" },
@@ -108,7 +108,7 @@ export default function Logo3(props) {
       },
     },
     {
-      variantValues: { small: "true" },
+      variantValues: { breakpoint: "small" },
       overrides: {
         NimbusNote39833501: {},
         NimbusNote39833502: {},
@@ -162,8 +162,17 @@ export default function Logo3(props) {
       },
     },
   ];
+  const breakpointHook = useBreakpointValue({
+    base: "small",
+    small: "small",
+    large: "large",
+  });
+  const rest = { style: { transition: "all 0.25s" }, ...restProp };
   const overrides = mergeVariantsAndOverrides(
-    getOverridesFromVariants(variants, props),
+    getOverridesFromVariants(variants, {
+      breakpoint: breakpointHook,
+      ...props,
+    }),
     overridesProp || {}
   );
   return (

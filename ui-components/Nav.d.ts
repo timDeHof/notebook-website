@@ -12,6 +12,7 @@ import { SyntheticEvent } from "react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type NavOverridesProps = {
     Nav?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 5604"?: PrimitiveOverrideProps<ViewProps>;
     "Logo 3"?: Logo3Props;
     Menu?: PrimitiveOverrideProps<FlexProps>;
     User39476179?: PrimitiveOverrideProps<FlexProps>;
@@ -28,7 +29,6 @@ export declare type NavProps = React.PropsWithChildren<Partial<FlexProps> & {
     authText?: String;
     handleAuth?: (event: SyntheticEvent) => void;
     avatar?: String;
-    Small?: Boolean;
 } & {
     overrides?: NavOverridesProps | undefined | null;
 }>;

@@ -15,9 +15,9 @@ export default function MarketingPricing(props) {
     <Flex
       gap="10px"
       direction="column"
-      width="1440px"
-      height="705px"
-      justifyContent="flex-start"
+      width="unset"
+      height="unset"
+      justifyContent="center"
       alignItems="center"
       overflow="hidden"
       position="relative"
@@ -571,7 +571,6 @@ export default function MarketingPricing(props) {
           <Button
             width="unset"
             height="unset"
-            padding="7px 0px 7px 0px"
             shrink="0"
             alignSelf="stretch"
             backgroundColor="rgba(0,34,102,1)"
@@ -1017,7 +1016,6 @@ export default function MarketingPricing(props) {
           <Button
             width="unset"
             height="unset"
-            padding="7px 0px 7px 0px"
             shrink="0"
             alignSelf="stretch"
             backgroundColor="rgba(0,34,102,1)"
@@ -1460,7 +1458,6 @@ export default function MarketingPricing(props) {
           <Button
             width="unset"
             height="unset"
-            padding="7px 0px 7px 0px"
             shrink="0"
             alignSelf="stretch"
             backgroundColor="rgba(0,34,102,1)"
