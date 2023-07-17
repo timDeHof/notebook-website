@@ -1,41 +1,17 @@
-type Pricing @model @auth(rules: [{allow: public}]) {
+type Tags @model @auth(rules: [{allow: public}]) {
   id: ID!
-  plan: String!
-  price: String!
-  details: [String!]
-  catchPhase: String
+  tagName: String
+  tagDesc: String
+  notes: [Notes] @manyToMany(relationName: "TagsNotes")
 }
 
-type Testimonial @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  name: String
-  avatar: String
-  testimony: String
-}
-
-type Notebook @model @auth(rules: [{allow: public}, {allow: owner}]) {
-  id: ID!
-  name: String!
-  Subject: Subject @hasOne
-  Pages: [Page] @hasMany(indexName: "byNotebook", fields: ["id"])
-  pageCount: Int
-  description: String
-  cover: String
-}
-
-type Subject @model @auth(rules: [{allow: public}, {allow: owner}]) {
-  id: ID!
-  name: String!
-  Pages: [Page] @hasMany(indexName: "bySubject", fields: ["id"])
-}
-
-type Page @model @auth(rules: [{allow: public}, {allow: owner}]) {
+type Notes @model @auth(rules: [{allow: public}]) {
   id: ID!
   title: String!
   content: String!
-  subjectID: ID! @index(name: "bySubject")
-  Subject: Subject @belongsTo(fields: ["subjectID"])
-  notebookID: ID! @index(name: "byNotebook")
-  Notebook: Notebook @belongsTo(fields: ["notebookID"])
+  isPinned: Boolean
+  isPublished: Boolean
+  isTrashed: Boolean
+  Tags: [Tags] @manyToMany(relationName: "TagsNotes")
 }
  
