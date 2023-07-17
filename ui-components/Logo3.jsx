@@ -195,7 +195,7 @@ export default function Logo3(props) {
           minX: 0,
           minY: 0,
           width: 9.73291015625,
-          height: 11.63623046875,
+          height: 11.636474609375,
         }}
         paths={[
           {
@@ -220,7 +220,7 @@ export default function Logo3(props) {
           minX: 0,
           minY: 0,
           width: 2.47314453125,
-          height: 11.64013671875,
+          height: 11.639892578125,
         }}
         paths={[
           {
@@ -245,7 +245,7 @@ export default function Logo3(props) {
           minX: 0,
           minY: 0,
           width: 12.3935546875,
-          height: 8.64013671875,
+          height: 8.639892578125,
         }}
         paths={[
           {
@@ -270,7 +270,7 @@ export default function Logo3(props) {
           minX: 0,
           minY: 0,
           width: 8.411376953125,
-          height: 11.64013671875,
+          height: 11.639892578125,
         }}
         paths={[
           {
@@ -295,7 +295,7 @@ export default function Logo3(props) {
           minX: 0,
           minY: 0,
           width: 7.8349609375,
-          height: 8.64013671875,
+          height: 8.639892578125,
         }}
         paths={[
           {
@@ -320,7 +320,7 @@ export default function Logo3(props) {
           minX: 0,
           minY: 0,
           width: 7.523193359375,
-          height: 8.64013671875,
+          height: 8.639892578125,
         }}
         paths={[
           {
@@ -345,7 +345,7 @@ export default function Logo3(props) {
           minX: 0,
           minY: 0,
           width: 9.73291015625,
-          height: 11.63623046875,
+          height: 11.636474609375,
         }}
         paths={[
           {
@@ -370,7 +370,7 @@ export default function Logo3(props) {
           minX: 0,
           minY: 0,
           width: 8.23681640625,
-          height: 8.64013671875,
+          height: 8.639892578125,
         }}
         paths={[
           {
@@ -395,7 +395,7 @@ export default function Logo3(props) {
           minX: 0,
           minY: 0,
           width: 4.770751953125,
-          height: 9.64013671875,
+          height: 9.639892578125,
         }}
         paths={[
           {
@@ -420,7 +420,7 @@ export default function Logo3(props) {
           minX: 0,
           minY: 0,
           width: 7.99169921875,
-          height: 8.64013671875,
+          height: 8.639892578125,
         }}
         paths={[
           {
@@ -508,7 +508,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 21.880615234375,
-                height: 15.1142578125,
+                height: 15.114013671875,
               }}
               paths={[
                 {
@@ -535,7 +535,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 7.018310546875,
-                height: 7.265625,
+                height: 7.265380859375,
               }}
               paths={[
                 {
@@ -562,7 +562,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 14.449462890625,
-                height: 13.67626953125,
+                height: 13.676025390625,
               }}
               paths={[
                 {
@@ -722,7 +722,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 21.880615234375,
-                height: 15.1142578125,
+                height: 15.114013671875,
               }}
               paths={[
                 {
@@ -749,7 +749,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 7.018310546875,
-                height: 7.265625,
+                height: 7.265380859375,
               }}
               paths={[
                 {
@@ -776,7 +776,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 14.449462890625,
-                height: 13.67626953125,
+                height: 13.676025390625,
               }}
               paths={[
                 {
@@ -913,7 +913,7 @@ export default function Logo3(props) {
             minX: 0,
             minY: 0,
             width: 43.392822265625,
-            height: 28.42431640625,
+            height: 28.424560546875,
           }}
           paths={[
             {
@@ -940,7 +940,7 @@ export default function Logo3(props) {
               minX: 0,
               minY: 0,
               width: 32.340087890625,
-              height: 28.42431640625,
+              height: 28.424560546875,
             }}
             paths={[]}
             display="block"
@@ -988,7 +988,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 6.66357421875,
-                height: 6.123046875,
+                height: 6.123291015625,
               }}
               paths={[
                 {
@@ -1096,7 +1096,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 9.79931640625,
-                height: 7.92431640625,
+                height: 7.924072265625,
               }}
               paths={[
                 {
@@ -1123,7 +1123,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 20.774658203125,
-                height: 15.84814453125,
+                height: 15.848388671875,
               }}
               paths={[
                 {
@@ -1201,7 +1201,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 14.148681640625,
-                height: 12.34912109375,
+                height: 12.349365234375,
               }}
               paths={[
                 {
@@ -1228,7 +1228,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 12.53173828125,
-                height: 11.19140625,
+                height: 11.191650390625,
               }}
               paths={[
                 {
@@ -1255,7 +1255,7 @@ export default function Logo3(props) {
                 minX: 0,
                 minY: 0,
                 width: 10.106201171875,
-                height: 5.78857421875,
+                height: 5.788818359375,
               }}
               paths={[
                 {
@@ -1392,7 +1392,7 @@ export default function Logo3(props) {
               minX: 0,
               minY: 0,
               width: 0.96435546875,
-              height: 1.01806640625,
+              height: 1.017822265625,
             }}
             paths={[
               {

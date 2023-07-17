@@ -7,9 +7,8 @@
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { ButtonProps, DividerProps, FlexProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
-import { ReacticonsbiBiBookAddProps } from "./ReacticonsbiBiBookAdd";
+import { MyIconProps } from "./MyIcon";
 import { NotebookitemProps } from "./Notebookitem";
-import { ReacticonsbiBiChevronLeftProps } from "./ReacticonsbiBiChevronLeft";
 import { Logo3Props } from "./Logo3";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type SidebarOverridesProps = {
@@ -22,7 +21,7 @@ export declare type SidebarOverridesProps = {
     "_Nav item base39793166"?: PrimitiveOverrideProps<FlexProps>;
     Content39793167?: PrimitiveOverrideProps<FlexProps>;
     Text39793168?: PrimitiveOverrideProps<TextProps>;
-    "react-icons/bi/BiBookAdd"?: ReacticonsbiBiBookAddProps;
+    MyIcon39793169?: MyIconProps;
     Divider?: PrimitiveOverrideProps<DividerProps>;
     "Frame 5598"?: PrimitiveOverrideProps<ViewProps>;
     "Notebook item40302618"?: NotebookitemProps;
@@ -37,7 +36,7 @@ export declare type SidebarOverridesProps = {
     Text39793176?: PrimitiveOverrideProps<TextProps>;
     "_Nav item base39793177"?: PrimitiveOverrideProps<FlexProps>;
     Content39793178?: PrimitiveOverrideProps<FlexProps>;
-    "react-icons/bi/BiChevronLeft"?: ReacticonsbiBiChevronLeftProps;
+    MyIcon39793179?: MyIconProps;
     Text39793180?: PrimitiveOverrideProps<TextProps>;
     "Frame 5605"?: PrimitiveOverrideProps<FlexProps>;
     "Logo 3"?: Logo3Props;

@@ -8,7 +8,7 @@
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Text } from "@aws-amplify/ui-react";
-import ReacticonsbiBiCheck from "./ReacticonsbiBiCheck";
+import MyIcon from "./MyIcon";
 export default function PlanCard(props) {
   const { PricingModel, handleMembership, overrides, ...rest } = props;
   return (
@@ -143,7 +143,7 @@ export default function PlanCard(props) {
             backgroundColor="rgba(241,178,142,1)"
             {...getOverrideProps(overrides, "Frame 43039515134")}
           >
-            <ReacticonsbiBiCheck
+            <MyIcon
               width="24px"
               height="24px"
               display="block"
@@ -153,8 +153,9 @@ export default function PlanCard(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "react-icons/bi/BiCheck39515135")}
-            ></ReacticonsbiBiCheck>
+              type="BiCheck"
+              {...getOverrideProps(overrides, "MyIcon39515135")}
+            ></MyIcon>
           </Flex>
           <Text
             fontFamily="Inter"
@@ -209,7 +210,7 @@ export default function PlanCard(props) {
             backgroundColor="rgba(241,178,142,1)"
             {...getOverrideProps(overrides, "Frame 431")}
           >
-            <ReacticonsbiBiCheck
+            <MyIcon
               width="24px"
               height="24px"
               display="block"
@@ -219,8 +220,9 @@ export default function PlanCard(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "react-icons/bi/BiCheck39515139")}
-            ></ReacticonsbiBiCheck>
+              type="BiCheck"
+              {...getOverrideProps(overrides, "MyIcon39515139")}
+            ></MyIcon>
           </Flex>
           <Text
             fontFamily="Inter"
@@ -275,7 +277,7 @@ export default function PlanCard(props) {
             backgroundColor="rgba(241,178,142,1)"
             {...getOverrideProps(overrides, "Frame 43039515142")}
           >
-            <ReacticonsbiBiCheck
+            <MyIcon
               width="24px"
               height="24px"
               display="block"
@@ -285,8 +287,9 @@ export default function PlanCard(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "react-icons/bi/BiCheck39515143")}
-            ></ReacticonsbiBiCheck>
+              type="BiCheck"
+              {...getOverrideProps(overrides, "MyIcon39515143")}
+            ></MyIcon>
           </Flex>
           <Text
             fontFamily="Inter"
@@ -341,7 +344,7 @@ export default function PlanCard(props) {
             backgroundColor="rgba(241,178,142,1)"
             {...getOverrideProps(overrides, "Frame 43040142635")}
           >
-            <ReacticonsbiBiCheck
+            <MyIcon
               width="24px"
               height="24px"
               display="block"
@@ -351,8 +354,9 @@ export default function PlanCard(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "react-icons/bi/BiCheck40142636")}
-            ></ReacticonsbiBiCheck>
+              type="BiCheck"
+              {...getOverrideProps(overrides, "MyIcon40142636")}
+            ></MyIcon>
           </Flex>
           <Text
             fontFamily="Inter"
@@ -404,7 +408,7 @@ export default function PlanCard(props) {
             backgroundColor="rgba(241,178,142,1)"
             {...getOverrideProps(overrides, "Frame 43040143245")}
           >
-            <ReacticonsbiBiCheck
+            <MyIcon
               width="24px"
               height="24px"
               display="block"
@@ -414,8 +418,9 @@ export default function PlanCard(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "react-icons/bi/BiCheck40143246")}
-            ></ReacticonsbiBiCheck>
+              type="BiCheck"
+              {...getOverrideProps(overrides, "MyIcon40143246")}
+            ></MyIcon>
           </Flex>
           <Text
             fontFamily="Inter"

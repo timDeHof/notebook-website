@@ -5,16 +5,15 @@
  **************************************************************************/
 
 /* eslint-disable */
-import * as React from "react"
+import * as React from "react";
 import {
   getOverrideProps,
   getOverridesFromVariants,
   mergeVariantsAndOverrides,
-} from "@aws-amplify/ui-react/internal"
-import { Button, Flex, Icon } from "@aws-amplify/ui-react"
-import { BiBookOpen, BiSolidBook } from "react-icons/bi"
+} from "@aws-amplify/ui-react/internal";
+import { Button, Flex } from "@aws-amplify/ui-react";
 export default function Notebookitem(props) {
-  const { overrides: overridesProp, ...rest } = props
+  const { overrides: overridesProp, ...rest } = props;
   const variants = [
     {
       variantValues: { isOpen: "true" },
@@ -27,33 +26,37 @@ export default function Notebookitem(props) {
         Notebookitem: { direction: "column" },
       },
     },
-  ]
+  ];
   const overrides = mergeVariantsAndOverrides(
     getOverridesFromVariants(variants, props),
-    overridesProp || {},
-  )
+    overridesProp || {}
+  );
   return (
     <Flex
-      gap='10px'
-      direction='row'
-      width='unset'
-      height='unset'
-      justifyContent='flex-start'
-      alignItems='flex-start'
-      position='relative'
-      padding='0px 0px 0px 0px'
-      display='flex'
+      gap="10px"
+      direction="row"
+      width="unset"
+      height="unset"
+      justifyContent="flex-start"
+      alignItems="flex-start"
+      position="relative"
+      padding="0px 0px 0px 0px"
+      display="flex"
       {...getOverrideProps(overrides, "Notebookitem")}
-      {...rest}>
+      {...rest}
+    >
       <Button
-        width='unset'
-        height='unset'
-        padding='0px 16px 0px 16px'
-        shrink='0'
-        backgroundColor='rgba(241,178,142,1)'
-        size='large'
+        width="unset"
+        height="unset"
+        padding="0px 16px 0px 16px"
+        shrink="0"
+        backgroundColor="rgba(241,178,142,1)"
+        size="large"
         isDisabled={true}
-        variation='link'></Button>
+        variation="link"
+        children="Finances"
+        {...getOverrideProps(overrides, "Button")}
+      ></Button>
     </Flex>
-  )
+  );
 }
