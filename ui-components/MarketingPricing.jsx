@@ -8,16 +8,16 @@
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Text } from "@aws-amplify/ui-react";
-import ReacticonsbiBiCheck from "./ReacticonsbiBiCheck";
+import MyIcon from "./MyIcon";
 export default function MarketingPricing(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
       gap="10px"
       direction="column"
-      width="1440px"
-      height="705px"
-      justifyContent="flex-start"
+      width="unset"
+      height="unset"
+      justifyContent="center"
       alignItems="center"
       overflow="hidden"
       position="relative"
@@ -249,7 +249,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153406")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -259,11 +259,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153407"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153407")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -318,7 +316,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43140153410")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -328,11 +326,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153411"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153411")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -387,7 +383,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153414")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -397,11 +393,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153415"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153415")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -456,7 +450,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153418")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -466,11 +460,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153419"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153419")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -525,7 +517,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153422")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -535,11 +527,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153423"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153423")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -571,7 +561,6 @@ export default function MarketingPricing(props) {
           <Button
             width="unset"
             height="unset"
-            padding="7px 0px 7px 0px"
             shrink="0"
             alignSelf="stretch"
             backgroundColor="rgba(0,34,102,1)"
@@ -692,7 +681,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153546")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -702,11 +691,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153547"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153547")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -761,7 +748,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43140153550")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -771,11 +758,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153551"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153551")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -830,7 +815,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153554")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -840,11 +825,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153555"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153555")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -899,7 +882,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153558")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -909,11 +892,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153559"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153559")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -968,7 +949,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153562")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -978,11 +959,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153563"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153563")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -1017,7 +996,6 @@ export default function MarketingPricing(props) {
           <Button
             width="unset"
             height="unset"
-            padding="7px 0px 7px 0px"
             shrink="0"
             alignSelf="stretch"
             backgroundColor="rgba(0,34,102,1)"
@@ -1138,7 +1116,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153686")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -1148,11 +1126,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153687"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153687")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -1207,7 +1183,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43140153690")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -1217,11 +1193,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153691"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153691")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -1276,7 +1250,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153694")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -1286,11 +1260,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153695"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153695")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -1345,7 +1317,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153698")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -1355,11 +1327,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153699"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153699")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -1414,7 +1384,7 @@ export default function MarketingPricing(props) {
                 backgroundColor="rgba(241,178,142,1)"
                 {...getOverrideProps(overrides, "Frame 43040153702")}
               >
-                <ReacticonsbiBiCheck
+                <MyIcon
                   width="24px"
                   height="24px"
                   display="block"
@@ -1424,11 +1394,9 @@ export default function MarketingPricing(props) {
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  {...getOverrideProps(
-                    overrides,
-                    "react-icons/bi/BiCheck40153703"
-                  )}
-                ></ReacticonsbiBiCheck>
+                  type="BiCheck"
+                  {...getOverrideProps(overrides, "MyIcon40153703")}
+                ></MyIcon>
               </Flex>
               <Text
                 fontFamily="Inter"
@@ -1460,7 +1428,6 @@ export default function MarketingPricing(props) {
           <Button
             width="unset"
             height="unset"
-            padding="7px 0px 7px 0px"
             shrink="0"
             alignSelf="stretch"
             backgroundColor="rgba(0,34,102,1)"

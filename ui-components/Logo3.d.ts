@@ -62,7 +62,7 @@ export declare type Logo3OverridesProps = {
 export declare type Logo3Props = React.PropsWithChildren<Partial<ViewProps> & {
     Small?: Boolean;
 } & {
-    small?: "false" | "true";
+    breakpoint?: "large" | "small";
 } & {
     overrides?: Logo3OverridesProps | undefined | null;
 }>;

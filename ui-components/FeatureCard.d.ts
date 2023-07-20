@@ -7,7 +7,7 @@
 import * as React from "react";
 import { Feature } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { ReacticonsbiBiCheckProps } from "./ReacticonsbiBiCheck";
+import { MyIconProps } from "./MyIcon";
 import { FlexProps, TextProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type FeatureCardOverridesProps = {
@@ -15,7 +15,7 @@ export declare type FeatureCardOverridesProps = {
     "Frame 5602"?: PrimitiveOverrideProps<FlexProps>;
     "Frame 5603"?: PrimitiveOverrideProps<FlexProps>;
     "Frame 430"?: PrimitiveOverrideProps<FlexProps>;
-    "react-icons/bi/BiCheck"?: ReacticonsbiBiCheckProps;
+    MyIcon?: MyIconProps;
     "Feature A"?: PrimitiveOverrideProps<TextProps>;
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;

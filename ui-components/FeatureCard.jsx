@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import ReacticonsbiBiCheck from "./ReacticonsbiBiCheck";
+import MyIcon from "./MyIcon";
 import { Flex, Text } from "@aws-amplify/ui-react";
 export default function FeatureCard(props) {
   const { FeatureModel, overrides, ...rest } = props;
@@ -69,7 +69,7 @@ export default function FeatureCard(props) {
             backgroundColor="rgba(241,178,142,1)"
             {...getOverrideProps(overrides, "Frame 430")}
           >
-            <ReacticonsbiBiCheck
+            <MyIcon
               width="24px"
               height="24px"
               display="block"
@@ -79,8 +79,9 @@ export default function FeatureCard(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "react-icons/bi/BiCheck")}
-            ></ReacticonsbiBiCheck>
+              type="BiCheck"
+              {...getOverrideProps(overrides, "MyIcon")}
+            ></MyIcon>
           </Flex>
           <Text
             fontFamily="Inter"

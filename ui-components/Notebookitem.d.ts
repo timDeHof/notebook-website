@@ -6,12 +6,15 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { IconProps } from "@aws-amplify/ui-react";
+import { ButtonProps, FlexProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type ReacticonsbiBiChevronRightOverridesProps = {
-    ReacticonsbiBiChevronRight?: PrimitiveOverrideProps<IconProps>;
+export declare type NotebookitemOverridesProps = {
+    Notebookitem?: PrimitiveOverrideProps<FlexProps>;
+    Button?: PrimitiveOverrideProps<ButtonProps>;
 } & EscapeHatchProps;
-export declare type ReacticonsbiBiChevronRightProps = React.PropsWithChildren<Partial<IconProps> & {
-    overrides?: ReacticonsbiBiChevronRightOverridesProps | undefined | null;
+export declare type NotebookitemProps = React.PropsWithChildren<Partial<FlexProps> & {
+    isOpen?: "false" | "true";
+} & {
+    overrides?: NotebookitemOverridesProps | undefined | null;
 }>;
-export default function ReacticonsbiBiChevronRight(props: ReacticonsbiBiChevronRightProps): React.ReactElement;
+export default function Notebookitem(props: NotebookitemProps): React.ReactElement;

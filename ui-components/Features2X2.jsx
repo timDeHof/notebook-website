@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import ReacticonsbiBiCheck from "./ReacticonsbiBiCheck";
+import MyIcon from "./MyIcon";
 import { Flex, Text, View } from "@aws-amplify/ui-react";
 export default function Features2X2(props) {
   const { overrides, ...rest } = props;
@@ -111,7 +111,7 @@ export default function Features2X2(props) {
                   backgroundColor="rgba(241,178,142,1)"
                   {...getOverrideProps(overrides, "Frame 43040153894")}
                 >
-                  <ReacticonsbiBiCheck
+                  <MyIcon
                     width="24px"
                     height="24px"
                     display="block"
@@ -121,11 +121,9 @@ export default function Features2X2(props) {
                     shrink="0"
                     position="relative"
                     padding="0px 0px 0px 0px"
-                    {...getOverrideProps(
-                      overrides,
-                      "react-icons/bi/BiCheck40153895"
-                    )}
-                  ></ReacticonsbiBiCheck>
+                    type="BiCheck"
+                    {...getOverrideProps(overrides, "MyIcon40153895")}
+                  ></MyIcon>
                 </Flex>
                 <Text
                   fontFamily="Inter"
@@ -239,7 +237,7 @@ export default function Features2X2(props) {
                   backgroundColor="rgba(241,178,142,1)"
                   {...getOverrideProps(overrides, "Frame 43040153870")}
                 >
-                  <ReacticonsbiBiCheck
+                  <MyIcon
                     width="24px"
                     height="24px"
                     display="block"
@@ -249,11 +247,9 @@ export default function Features2X2(props) {
                     shrink="0"
                     position="relative"
                     padding="0px 0px 0px 0px"
-                    {...getOverrideProps(
-                      overrides,
-                      "react-icons/bi/BiCheck40153871"
-                    )}
-                  ></ReacticonsbiBiCheck>
+                    type="BiCheck"
+                    {...getOverrideProps(overrides, "MyIcon40153871")}
+                  ></MyIcon>
                 </Flex>
                 <Text
                   fontFamily="Inter"
@@ -380,7 +376,7 @@ export default function Features2X2(props) {
                   backgroundColor="rgba(241,178,142,1)"
                   {...getOverrideProps(overrides, "Frame 43040153846")}
                 >
-                  <ReacticonsbiBiCheck
+                  <MyIcon
                     width="24px"
                     height="24px"
                     display="block"
@@ -390,11 +386,9 @@ export default function Features2X2(props) {
                     shrink="0"
                     position="relative"
                     padding="0px 0px 0px 0px"
-                    {...getOverrideProps(
-                      overrides,
-                      "react-icons/bi/BiCheck40153847"
-                    )}
-                  ></ReacticonsbiBiCheck>
+                    type="BiCheck"
+                    {...getOverrideProps(overrides, "MyIcon40153847")}
+                  ></MyIcon>
                 </Flex>
                 <Text
                   fontFamily="Inter"
@@ -508,7 +502,7 @@ export default function Features2X2(props) {
                   backgroundColor="rgba(241,178,142,1)"
                   {...getOverrideProps(overrides, "Frame 43040153822")}
                 >
-                  <ReacticonsbiBiCheck
+                  <MyIcon
                     width="24px"
                     height="24px"
                     display="block"
@@ -518,11 +512,9 @@ export default function Features2X2(props) {
                     shrink="0"
                     position="relative"
                     padding="0px 0px 0px 0px"
-                    {...getOverrideProps(
-                      overrides,
-                      "react-icons/bi/BiCheck40153823"
-                    )}
-                  ></ReacticonsbiBiCheck>
+                    type="BiCheck"
+                    {...getOverrideProps(overrides, "MyIcon40153823")}
+                  ></MyIcon>
                 </Flex>
                 <Text
                   fontFamily="Inter"

@@ -9,11 +9,13 @@
       "UnauthRoleName": "amplify-notebookwebsite-staging-163709-unauthRole",
       "StackName": "amplify-notebookwebsite-staging-163709",
       "StackId": "arn:aws:cloudformation:us-east-1:423045963200:stack/amplify-notebookwebsite-staging-163709/8475fbf0-1ce4-11ee-93fa-120594463353",
-      "AmplifyAppId": "d2mmgw3vwmq3x6"
+      "AmplifyAppId": "d2mmgw3vwmq3x6",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-notebookwebsite-staging-163709-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "auth": {
-        "notebookwebsite": {}
+        "notebookwebsite": {},
+        "userPoolGroups": {}
       },
       "function": {
         "pageCountfcn": {},

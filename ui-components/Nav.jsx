@@ -6,19 +6,18 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import Logo3 from "./Logo3";
 import { Button, Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 export default function Nav(props) {
-  const {
-    username,
-    authText,
-    handleAuth,
-    avatar,
-    Small = false,
-    overrides,
-    ...rest
-  } = props;
+  const { username, authText, handleAuth, avatar, overrides, ...rest } = props;
+  const frameFiveSixZeroFourOnClick = useNavigateAction({
+    type: "url",
+    url: "/",
+  });
   return (
     <Flex
       gap="352px"
@@ -33,7 +32,8 @@ export default function Nav(props) {
       {...getOverrideProps(overrides, "Nav")}
       {...rest}
     >
-      <Logo3
+      <View
+        width="138px"
         height="32px"
         display="block"
         gap="unset"
@@ -42,9 +42,26 @@ export default function Nav(props) {
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        small={false}
-        {...getOverrideProps(overrides, "Logo 3")}
-      ></Logo3>
+        onClick={() => {
+          frameFiveSixZeroFourOnClick();
+        }}
+        {...getOverrideProps(overrides, "Frame 5604")}
+      >
+        <Logo3
+          height="32px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="0px"
+          left="0px"
+          padding="0px 0px 0px 0px"
+          breakpoint="large"
+          small={false}
+          {...getOverrideProps(overrides, "Logo 3")}
+        ></Logo3>
+      </View>
       <Flex
         gap="14px"
         direction="row"
