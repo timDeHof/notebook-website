@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { Flex } from "@aws-amplify/ui-react"
+import { Flex, View } from "@aws-amplify/ui-react"
 import Sidebar from "../components/sidebar/sidebar"
 import Layout from "../components/Layout"
 import { Amplify, API, graphqlOperation } from "aws-amplify"
@@ -17,6 +17,7 @@ import {
 
 import Editor from "@components/editor/component"
 import { CreateNotesMutation, Notes, CreateNotesInput } from "@/API"
+import { NotesCreateForm } from "../../ui-components"
 Amplify.configure(awsconfig)
 
 const initialFormState: CreateNotesInput = {
@@ -28,6 +29,7 @@ const initialFormState: CreateNotesInput = {
   isTrashed: false,
   _version: 0,
 }
+
 export default function Dashboard() {
   const [notes, setNotes] = useState<Notes[]>([])
   const [formData, setFormData] = useState<CreateNotesInput>(initialFormState)
@@ -74,13 +76,12 @@ export default function Dashboard() {
           authText='Sign out'
           username={user?.attributes?.email.split("@")[0] || ""}>
           <Flex direction={"row"} width={"auto"} height={"100%"}>
-            <Sidebar
-              items={notes}
-              createNote={() => createNote(formData)}
-              deleteNote={deleteNote}
-            />
-            {}
-            {/* <Editor /> */}
+            <View>
+              <Sidebar items={notes} deleteNote={deleteNote} />
+            </View>
+            <View Width={"100%"}>
+              <NotesCreateForm />
+            </View>
           </Flex>
         </Layout>
       )}
